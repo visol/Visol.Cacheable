@@ -1,0 +1,10 @@
+CacheableMethodTransientCache:
+  frontend: Neos\Cache\Frontend\VariableFrontend
+  backend: Neos\Cache\Backend\TransientMemoryBackend
+
+CacheableMethodPersistentCache:
+  frontend: Neos\Cache\Frontend\VariableFrontend
+  backend: Neos\Cache\Backend\FileBackend
+  backendOptions:
+    defaultLifetime: 0
+  persistent: true
